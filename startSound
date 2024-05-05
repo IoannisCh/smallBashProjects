@@ -1,0 +1,11 @@
+#!/bin/bash
+
+case "$1" in 
+'start')
+cat /usr/share/audio/a.au > /dev/audio
+;;
+'Stop')
+cat /usr/share/audio/b.au > /dev/audio
+;;
+esac
+exit 0
